@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SMS"
+    android:gravity="center"
+
+
+    >
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number :"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        />
+    <EditText
+
+        android:background="@drawable/transparent_bg_cal"
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:hint="Enter Number"
+        android:textColorHint="@color/white"
+        />
+    <Button
+        android:id="@+id/sndBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Send"
+        android:background="@drawable/red_button"
+
+        />
+
+    <TextView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*This Message will send to your relative number and Emergency control room :This is an Emergency.\n Also send your location"
+        android:textColor="@color/colorAccent"
+
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        />
+    <TextView
+        android:id="@+id/loca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
+
+
+</RelativeLayout>
